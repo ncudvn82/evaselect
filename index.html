@@ -1,12 +1,251 @@
-<style>
-    .wk {
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="wk">
-    <img src="working.png" style="width: 40%; height: auto;">
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Sections</title>
+    <link rel="stylesheet" href="./css/evas.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h4 {
+            text-align: left;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* Space between logo and links */
+        }
+
+        /* Logo styling on the left */
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            padding-left: 20px;
+        }
+
+        /* Navbar links on the right */
+        .navbar .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Sections styling */
+        section {
+            height: 80vh;
+            width: 99vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #section1 {
+            background-image: url(./img/bk.jpg);
+            background-size: cover;
+        }
+
+        #section2 {
+            background-color: #70a09b;
+        }
+
+        #section3 {
+            background-color: rgb(73, 152, 144);
+        }
+
+        #section4 {
+            background-color: #80a29f;
+        }
+
+        #section5 {
+            background-color: #5c9a94;
+        }
+
+        #section6 {
+            background-color: #679b96;
+        }
+
+        #section7 {
+            height: 10vh;
+            background-color: #7e9f9c;
+        }
+
+
+        .modelsb {
+            background-size: contain;
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+
+        .modelsb2b {
+            background-image: url(./img/modelb2b.png);
+            width: 50%;
+            height: 100%;
+        }
+
+        .modelsb2c {
+            background-image: url(./img/modelb2b2c.png);
+            width: 50%;
+            height: 100%;
+        }
+
+        .icon {
+
+            list-style: none;
+            padding: 0;
+            padding-left: 4vh;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .icon li {
+            width: 4vh;
+            height: 4vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar with a logo and links -->
+    <div class="navbar">
+        <a href="#" class="logo">Your Logo</a>
+        <div class="nav-links">
+            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+            <a href="#section4">Section 4</a>
+            <a href="#section5">Section 5</a>
+        </div>
+    </div>
+
+    <section id="section1">
+        <h1></h1>
+    </section>
+
+    <section id="section2">
+        <div style="width: 50vw;">
+            <h1>精拓生技『星星99』活動產品訂購</h1>
+            <h2>星星99 - AI藝術 x 兒癌支持 明信片/拼圖 訂購</h2>
+            <hr>
+            <h3>你，還相信魔法嗎?</h3>
+            <br><br>
+            <h4 style="padding: 40px;">『星星99』，旨在關懷患有兒童癌症的孩子們。活動分為三部曲，從6月啟動直到9月，目前已進入第二階段，感謝您對星星99活動的支持。</h4>
+        </div>
+        <div style="width: 49vw;">
+            <div>
+                <h3>
+                    首部曲（2024/4/9-5/31）
+                </h3>
+                <h4>
+                    我們向全世界徵集AI創意繪圖，透過AI藝術繪製活動，每個人都可以簡單參與，用有趣的方式喚起大家對兒癌的關注，發揮愛心與創意表達心意。此部分的活動已經告一個段落，我們共收到超過180幅畫作，感謝大家的參與。
+                </h4>
+            </div>
+            <div>
+                <h3>
+                    二部曲（2024/6/3-9/20）
+                </h3>
+                <h4>
+                    我們將選出的作品設計並製成實體明信片，舉辦公益販售。就在這個頁面，您可以自由參與，購買喜歡的明信片或直接購買拼圖，由我們幫您做愛心代送！
+                </h4>
+            </div>
+            <div>
+                <h3>
+                    三部曲（2024/8/1-9/27）
+                </h3>
+                <h4>
+                    我們將利用這些所得，將繪圖製作成小拼圖，於九月兒癌月當成小禮物送至兒癌病房中。
+                </h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div style="width: 50vw;">
+            <h1>
+                走進他們的故事，就能清晰看見黑暗之中，微小卻堅定的光芒。
+            </h1>
+            <h4>
+                在「微光時分」裡，主角們擁有各式各樣的背景和人生故事。他們是音樂家、教授、家庭主婦，或是學者。透過訪談，主角們分享了自己的人生觀和親身經歷，讓觀眾能身臨其境地感受和共鳴這些不同角色的人生旅程。
+
+                每一集，我們將帶領觀眾深入了解癌症病患的真實生活，從不同的生活背景、職業、社會角色出發，揭示他們的人生觀、病程經歷，以及面對逆境的態度。
+
+                我們期望給予那些努力對抗癌症的人們及其家人力量和慰藉，同時也為廣大觀眾提供了深入了解這個疾病及其影響的機會。
+
+                讓我們一起聆聽和分享這些強大的故事，感受那在困境中不滅的微光。
+            </h4>
+        </div>
+    </section>
+
+    <section id="section4">
+        <iframe width="1000" height="600" src="https://www.youtube.com/embed/NQ_eGW6cpyE?si=zs9YvTgFMVGS-_Cj"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="section5">
+        <div style="width: 80%; height: 80%;">
+            <div class="modelsb" style="background-image: url(./img/models.png); width: 100%; height: 30%;"></div>
+            <div style="display: flex;width: 100%; height: 70%;">
+                <div class="modelsb modelsb2b">
+                </div>
+                <div class="modelsb modelsb2c">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section6"></section>
+    <section id="section7">
+        <div>
+            <img src="./img/f-logo.svg" alt="flogo">
+        </div>
+        <div>
+            COPYRIGHT © 2022 CANCERFREE BIOTECH ALL RIGHTS RESERVED.
+        </div>
+        <div style="width: 12vw;">
+            <ul class="icon">
+                <li><a href="https://www.facebook.com/CancerFreeBiotech/" target="_blank" rel="noreferrer noopener"><img
+                            src="img/icon001.svg" alt="FB"></a></li>
+                <li><a href="https://twitter.com/cancerfreebio" target="_blank" rel="noreferrer noopener"><img
+                            src="img/icon002.svg" alt="Twitter"></a></li>
+                <li><a href="https://www.linkedin.com/company/cancerfree-biotech/mycompany/" target="_blank"
+                        rel="noreferrer noopener"><img src="img/icon003.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCqvEm2rawS8cMXA1PVIn2Bg" target="_blank"
+                        rel="noreferrer noopener"><img src="img/icon004.svg" alt="Youtube"></a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
