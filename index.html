@@ -74,12 +74,13 @@
         }
 
         #section1 {
-            height: 70vh;
+            min-height: 70vh;
             background-color: #eefffe;
+            padding-top: 40px;
         }
 
         #section2 {
-            height: 60vh;
+            min-height: 60vh;
             background-color: #eefffe;
         }
 
@@ -99,7 +100,7 @@
         }
 
         #section6 {
-            height: 90vh;
+            height: auto;
             background-color: #eefffe;
         }
 
@@ -141,6 +142,159 @@
             width: 4vh;
             height: 4vh;
         }
+
+        /* Default styles for large screens (like 32-inch monitor) */
+        body {
+            font-size: 18px;
+        }
+
+        /* Default styles for large screens */
+        #section6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        #section6 h4 {
+            line-height: 1.8;
+        }
+
+        #section2 div {
+            width: 60%;
+        }
+
+        /* Adjustments for tablets (max-width: 1024px) */
+        @media (max-width: 1024px) {
+            #section6 {
+                height: auto;
+                padding: 20px;
+            }
+
+            #section6 h4 {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+            #section6 h1 {
+                font-size: 24px;
+            }
+        }
+
+        /* Adjustments for mobile devices (max-width: 768px) */
+        @media (max-width: 768px) {
+            #section6 {
+                padding: 15px;
+            }
+
+            #section6 h4 {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            #section6 h1 {
+                font-size: 20px;
+            }
+
+            /* Limit text height with scrolling for small screens */
+            #section6 div {
+                max-height: 300px;
+                overflow-y: auto;
+            }
+        }
+
+
+        /* For tablets (width less than 1024px) */
+        @media (max-width: 1024px) {
+            .navbar .nav-links a {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+
+            section {
+                font-size: 20px;
+                padding: 10px;
+                flex-direction: column;
+                width: auto;
+            }
+
+            #section2 div {
+                width: 75%;
+            }
+
+            #section1 iframe {
+                width: 600px;
+                height: 350px;
+            }
+
+            #section4 iframe {
+                width: 700px;
+                height: 400px;
+            }
+
+            .CFBimg {
+                width: 200px;
+            }
+        }
+
+        /* For mobile devices (width less than 768px) */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar .logo {
+                font-size: 20px;
+                padding-left: 10px;
+            }
+
+            .navbar .nav-links {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar .nav-links a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            section {
+                font-size: 16px;
+                padding: 5px;
+                flex-direction: column;
+                width: auto;
+            }
+
+            #section1 iframe {
+                width: 95%;
+                height: 250px;
+            }
+
+            #section2 div {
+                width: 75%;
+            }
+
+            #section4 iframe {
+                width: 100%;
+                height: 300px;
+            }
+
+            .modelsb2b,
+            .modelsb2c {
+                width: 100%;
+                height: 50%;
+            }
+
+            .icon {
+                padding-left: 2vh;
+            }
+
+            .icon li {
+                width: 3vh;
+                height: 3vh;
+            }
+        }
     </style>
 </head>
 
@@ -160,7 +314,7 @@
 
     <section id="section1">
         <div style="padding: 20px;">
-            <img src="./img/CFBiocn2.png">
+            <img src="./img/CFBiocn2.png" class="CFBimg">
         </div>
         <div style="padding: 20px;">
             <iframe width="700" height="400" src="https://www.youtube.com/embed/Zkt0YFEC1fg?si=hxsaeflkQZD0o96C"
@@ -171,7 +325,7 @@
     </section>
 
     <section id="section2">
-        <div style="width: 50%;">
+        <div>
             <h1>E.V.A. (Ex-Vivo Avatar) 体外増殖培養技術</h1>
             <h4>当社が開発した E.V.A.（Ex-Vivo Avatar）は、器官様培養システムと AI 画像認識を組み合わせた技術プラットフォームです。このプラットフォームは、がん研究において CTC を迅速に CDO
                 に拡張することを可能にし、細胞療法、がんワクチン、新薬の開発など、幅広い応用が期待されます。</h4>
