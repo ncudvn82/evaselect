@@ -20,13 +20,12 @@
 
         /* Navbar styling */
         .navbar {
-            display: none;
+            display: flex;
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: #79c7c2;
             padding: 10px;
-            /* display: flex; */
             align-items: center;
             justify-content: space-between;
             /* Space between logo and links */
@@ -38,6 +37,10 @@
             font-size: 24px;
             text-decoration: none;
             padding-left: 20px;
+        }
+
+        a.logo:hover {
+            color: inherit;
         }
 
         /* Navbar links on the right */
@@ -65,42 +68,44 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: black;
             font-size: 24px;
             text-align: center;
         }
 
         #section1 {
-            background-image: url(./img/bk.jpg);
-            background-size: cover;
+            height: 70vh;
+            background-color: #eefffe;
         }
 
         #section2 {
-            background-color: #70a09b;
+            height: 60vh;
+            background-color: #eefffe;
         }
 
         #section3 {
-            background-color: #70a09b;
+            background-color: #eefffe;
         }
 
         #section4 {
             flex-flow: column nowrap;
             justify-items: center;
-            background-color: #70a09b;
+            background-color: #eefffe;
         }
 
         #section5 {
             display: none;
-            background-color: #5c9a94;
+            background-color: #eefffe;
         }
 
         #section6 {
-            background-color: #70a09b;
+            height: 90vh;
+            background-color: #eefffe;
         }
 
         #section7 {
             height: 10vh;
-            background-color: #1d2a29;
+            background-color: #628280;
         }
 
 
@@ -143,58 +148,38 @@
 
     <!-- Navbar with a logo and links -->
     <div class="navbar">
-        <a href="#" class="logo">Your Logo</a>
-        <div class="nav-links">
+        <a href="#" class="logo">精拓生技 Cancerfree Biotech</a>
+        <!-- <div class="nav-links">
             <a href="#section1">Section 1</a>
             <a href="#section2">Section 2</a>
             <a href="#section3">Section 3</a>
             <a href="#section4">Section 4</a>
             <a href="#section5">Section 5</a>
-        </div>
+        </div> -->
     </div>
 
     <section id="section1">
-        <h1></h1>
+        <div style="padding: 20px;">
+            <img src="./img/CFBiocn2.png">
+        </div>
+        <div style="padding: 20px;">
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/Zkt0YFEC1fg?si=hxsaeflkQZD0o96C"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </section>
 
     <section id="section2">
-        <div style="width: 50vw;">
-            <h1>精拓生技『星星99』活動產品訂購</h1>
-            <h2>星星99 - AI藝術 x 兒癌支持 明信片/拼圖 訂購</h2>
-            <hr>
-            <h3>你，還相信魔法嗎?</h3>
-            <br><br>
-            <h4 style="padding: 40px;">『星星99』，旨在關懷患有兒童癌症的孩子們。活動分為三部曲，從6月啟動直到9月，目前已進入第二階段，感謝您對星星99活動的支持。</h4>
+        <div style="width: 50%;">
+            <h1>E.V.A. (Ex-Vivo Avatar) 体外増殖培養技術</h1>
+            <h4>当社が開発した E.V.A.（Ex-Vivo Avatar）は、器官様培養システムと AI 画像認識を組み合わせた技術プラットフォームです。このプラットフォームは、がん研究において CTC を迅速に CDO
+                に拡張することを可能にし、細胞療法、がんワクチン、新薬の開発など、幅広い応用が期待されます。</h4>
         </div>
-        <div style="width: 49vw;">
-            <div>
-                <h3>
-                    首部曲（2024/4/9-5/31）
-                </h3>
-                <h4>
-                    我們向全世界徵集AI創意繪圖，透過AI藝術繪製活動，每個人都可以簡單參與，用有趣的方式喚起大家對兒癌的關注，發揮愛心與創意表達心意。此部分的活動已經告一個段落，我們共收到超過180幅畫作，感謝大家的參與。
-                </h4>
-            </div>
-            <div>
-                <h3>
-                    二部曲（2024/6/3-9/20）
-                </h3>
-                <h4>
-                    我們將選出的作品設計並製成實體明信片，舉辦公益販售。就在這個頁面，您可以自由參與，購買喜歡的明信片或直接購買拼圖，由我們幫您做愛心代送！
-                </h4>
-            </div>
-            <div>
-                <h3>
-                    三部曲（2024/8/1-9/27）
-                </h3>
-                <h4>
-                    我們將利用這些所得，將繪圖製作成小拼圖，於九月兒癌月當成小禮物送至兒癌病房中。
-                </h4>
-            </div>
-        </div>
+
     </section>
 
-    <section id="section3">
+    <!-- <section id="section3">
         <div style="width: 50vw;">
             <h1>
                 走進他們的故事，就能清晰看見黑暗之中，微小卻堅定的光芒。
@@ -209,7 +194,7 @@
                 讓我們一起聆聽和分享這些強大的故事，感受那在困境中不滅的微光。
             </h4>
         </div>
-    </section>
+    </section> -->
 
     <section id="section4">
         <h1>Mr. Lu | CancerFree Biotech #osteosarcoma #anticancerstory</h1>
@@ -230,7 +215,29 @@
             </div>
         </div>
     </section>
-    <section id="section6"></section>
+    <section id="section6">
+        <div style="width: 80%;">
+            <h4>
+                精拓生技では、私たちは常にがん患者を支援し、「替身医療」という新しい治療方法を普及させることに力を入れてきました。この治療法の目的は、がん患者に新しい治療の選択肢を認識させ、患者の身体的負担を軽減することです。
+
+                体外でがん細胞を培養し、さまざまな薬剤の反応を試すことで、医師がより効果的な治療戦略を立てるための助けとなります。
+
+                患者さんとのシェアのたびに、サービスのフィードバックを記録するだけでなく、本当に患者のためになっているのか、この道が正しい方向に進んでいるのかを確認しています。
+            </h4>
+            <br>
+            <h1>#生命の重さを分析する</h1>
+            <h4>彼は財務分析官です。<br>
+                日々、報告書に向き合い、数字や財務成績、さらには企業の将来性を計算しています。 分析という仕事は彼にとって得意分野です。
+                しかし、生命は分析によって完璧に予測できるものではありません。
+
+                大学を卒業して間もない、前途洋々の彼は、25歳の時に四肢に発生する骨肉腫というがんの診断を受けました。
+                がんを患った後も、彼は治療法を求めて奔走し、13回の化学療法と1回の手術を受けても再発しましたが、決して諦めませんでした。
+                最後に彼は「替身医療」と出会い、最小限の身体的負担で特定の悪性腫瘍に効果のある薬を見つけることができました。
+
+                「私は今受けている治療薬が、この怪物を倒す助けになる可能性が十分にあると知っています Because I know that, with this drug, there’s still a chance
+                to beat this monster 」盧さんはカメラの前で笑いながら、静かで深い決意を湛えた目で語りました。</h4>
+        </div>
+    </section>
     <section id="section7">
         <div>
             <img src="./img/f-logo.svg" alt="flogo">
